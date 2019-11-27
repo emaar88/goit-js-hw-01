@@ -5,23 +5,21 @@ const AustraliaPrise = 170;
 const IndiaPrise = 80;
 const JamaicaPrise = 120;
 
-
+selectCountry = toLowerCase(selectCountry);
 switch (selectCountry) {
-    case 'Китай':
+    case 'китай':
       alert('Доставка в ' + selectCountry + ' будет стоить ' + ChinaPrise + ' кредитов');
       break;
-  
-    case 'Чили':
+    case 'чили':
       alert('Доставка в ' + selectCountry + ' будет стоить ' + ChilePrise + ' кредитов');
       break;
-  
-    case 'Австралия':
+    case 'австралия':
       alert('Доставка в ' + selectCountry + ' будет стоить ' + AustraliaPrise + ' кредитов');
       break;
-    case 'Индия':
-        alert('Доставка в ' + selectCountry + ' будет стоить ' + IndiaPrise + ' кредитов');
-        break;
-    case 'Ямайка':
+    case 'индия':
+      alert('Доставка в ' + selectCountry + ' будет стоить ' + IndiaPrise + ' кредитов');
+      break;
+    case 'ямайка':
       alert('Доставка в ' + selectCountry + ' будет стоить ' + JamaicaPrise + ' кредитов');
       break;
     default:
