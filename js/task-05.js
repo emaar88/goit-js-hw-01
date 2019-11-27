@@ -5,7 +5,7 @@ const AustraliaPrise = 170;
 const IndiaPrise = 80;
 const JamaicaPrise = 120;
 
-selectCountry = toLowerCase(selectCountry);
+selectCountry = selectCountry.toLowerCase();
 switch (selectCountry) {
     case 'китай':
       alert('Доставка в ' + selectCountry + ' будет стоить ' + ChinaPrise + ' кредитов');
