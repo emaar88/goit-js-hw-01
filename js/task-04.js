@@ -13,13 +13,12 @@ if (number_Droids === null)
 else
 {
     totalPrice = (pricePerDroid*parseInt(number_Droids));
-}
-
-if (credits<totalPrice) 
-{
-    alert('Недостаточно средств на счету!');
-}
-else{
-    yourmoney = (credits - totalPrice);
-    alert('Вы купили ' + number_Droids + ' дроидов, на счету осталось ' + yourmoney + ' кредитов.');
+    if (credits<totalPrice) 
+    {
+        alert('Недостаточно средств на счету!');
+    }
+    else{
+        yourmoney = (credits - totalPrice);
+        alert('Вы купили ' + number_Droids + ' дроидов, на счету осталось ' + yourmoney + ' кредитов.');
+    }
 }
