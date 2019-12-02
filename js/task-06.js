@@ -1,6 +1,5 @@
 let number_user = 0;
 let total = 0;
-if (number_user !== null) {
   do {
     if (number_user !== null)
     {  
@@ -9,6 +8,3 @@ if (number_user !== null) {
     }
   } while (number_user !== null)
   alert('Общая сумма чисел равна ' + total);
-} else {
-  alert('Отменено пользователем');
-}
