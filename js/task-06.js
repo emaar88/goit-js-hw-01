@@ -7,6 +7,6 @@ while (number_user !== null) {
   } else if (number_user === null && Number.isNaN(total) !== false) {
     console.log('Общая сумма чисел равна ' + total);
   } else {
-    console.log('Введено не число');
+    console.log('Отменено пользователем');
   }
 }
