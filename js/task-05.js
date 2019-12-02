@@ -6,56 +6,25 @@ const IndiaPrise = 80;
 const JamaicaPrise = 120;
 
 if (selectCountry === null) {
-  alert('Отменено пользователем');
+  console.log('Отменено пользователем');
 } else {
   selectCountry = selectCountry.toLowerCase();
   switch (selectCountry) {
     case 'китай':
-      alert(
-        'Доставка в ' +
-          selectCountry +
-          ' будет стоить ' +
-          ChinaPrise +
-          ' кредитов',
-      );
+      console.log('Доставка в ' + selectCountry + ' будет стоить ' + ChinaPrise + ' кредитов',);
       break;
     case 'чили':
-      alert(
-        'Доставка в ' +
-          selectCountry +
-          ' будет стоить ' +
-          ChilePrise +
-          ' кредитов',
-      );
+      console.log('Доставка в ' + selectCountry + ' будет стоить ' + ChilePrise + ' кредитов',);
       break;
     case 'австралия':
-      alert(
-        'Доставка в ' +
-          selectCountry +
-          ' будет стоить ' +
-          AustraliaPrise +
-          ' кредитов',
-      );
+      console.log( 'Доставка в ' + selectCountry + ' будет стоить ' + AustraliaPrise + ' кредитов',);
       break;
     case 'индия':
-      alert(
-        'Доставка в ' +
-          selectCountry +
-          ' будет стоить ' +
-          IndiaPrise +
-          ' кредитов',
-      );
+      console.log('Доставка в ' + selectCountry + ' будет стоить ' + IndiaPrise +' кредитов',);
       break;
-    case 'ямайка':
-      alert(
-        'Доставка в ' +
-          selectCountry +
-          ' будет стоить ' +
-          JamaicaPrise +
-          ' кредитов',
-      );
+    case 'ямайка': console.log('Доставка в ' + selectCountry + ' будет стоить ' + JamaicaPrise + ' кредитов',);
       break;
     default:
-      alert('В вашей стране доставка не доступна');
+      console.log('В вашей стране доставка не доступна');
   }
 }

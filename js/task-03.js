@@ -2,13 +2,13 @@ const ADMIN_PASSWORD = 'sergiy123';
 let message = prompt('Введите пожалуйста пароль:');
 
 if (message === null) {
-  alert('Отменено пользователем!');
+  console.log('Отменено пользователем!');
 } else {
   if (message === ADMIN_PASSWORD) {
-    alert('Добро пожаловать!');
+    console.log('Добро пожаловать!');
   }
   if (message !== ADMIN_PASSWORD) {
-    alert('Доступ запрещен, неверный пароль!');
-    alert('ваш пароль был ' + ADMIN_PASSWORD);
+    console.log('Доступ запрещен, неверный пароль!');
+    console.log('ваш пароль был ' + ADMIN_PASSWORD);
   }
 }

@@ -9,9 +9,9 @@ while (number_user !== null)
     }
     else if ((number_user === null) && (total>0))
     {
-        alert('Общая сумма чисел равна ' + total);
+        console.log('Общая сумма чисел равна ' + total);
     }
     else {
-        alert("Введено не число");
+        console.log("Введено не число");
     }
  }

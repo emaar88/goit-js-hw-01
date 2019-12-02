@@ -6,14 +6,14 @@ let yourmoney;
 const number_Droids = prompt('Введите пожалуйста количество дронов');
 
 if (number_Droids === null) {
-  alert('Отменено пользователем!');
+  console.log('Отменено пользователем!');
 } else {
   totalPrice = pricePerDroid * parseInt(number_Droids);
   if (credits < totalPrice) {
-    alert('Недостаточно средств на счету!');
+    console.log('Недостаточно средств на счету!');
   } else {
     yourmoney = credits - totalPrice;
-    alert(
+    console.log(
       'Вы купили ' +
         number_Droids +
         ' дроидов, на счету осталось ' +
