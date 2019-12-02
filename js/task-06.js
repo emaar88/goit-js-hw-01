@@ -6,5 +6,9 @@ let total = 0;
         number_user = prompt('Введите пожалуйста число');
         total = total + parseInt(number_user);
     }
+    else 
+    {
+        alert('Прерван вход');
+    }
   } while (number_user !== null)
   alert('Общая сумма чисел равна ' + total);
