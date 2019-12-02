@@ -1,14 +1,17 @@
-let number_user = 0;
+let number_user;
 let total = 0;
-  do {
+while (number_user !== null)
+ {
+    number_user = prompt ('Введите пожалуйста число');
     if (number_user !== null)
-    {  
-        number_user = prompt('Введите пожалуйста число');
-        total = total + parseInt(number_user);
-    }
-    else 
     {
-        alert('Прерван вход');
+        total = (total + parseInt(number_user));
     }
-  } while (number_user !== null)
-  alert('Общая сумма чисел равна ' + total);
+    else if ((number_user === null) && (total>0))
+    {
+        alert('Общая сумма чисел равна ' + total);
+    }
+    else {
+        alert("Введено не число");
+    }
+ }
