@@ -6,5 +6,5 @@ const message = 'Общая сумма чисел равна: ';
 do {
   input = prompt('введите пожалуйста число');
   total = total + Number(input);
-} while (number_user !== null);
+} while (input !== null);
 alert(`${message}  ${total}`);
